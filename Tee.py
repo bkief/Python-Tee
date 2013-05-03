@@ -6,9 +6,9 @@ newlog = True
 class Tee(object):
 
     """This module allows for user control and redirection of the text
-       printed to the Python shell, the STDOUT. The module may be run
+       printed to the Python shell, the STDOUT/STDERR. The module may be run
        using the Python with statement for a limited redirection.
-       Alternativly, the module may be initialized as class and
+       Alternativly, the module may be initialized as a class and
        startlog() may be called to redirect STDOUT until stoplog()
        is called. The STDOUT may be redirected to a file, a string, 
        the screen, or any combination there of. STDOUT may also be silenced.
@@ -19,6 +19,7 @@ class Tee(object):
 
 
        Tee(*name, *mode, *option)
+       Tee.startlog(*name, *mode, *option)
 
        *name, default=None; This is the output file the STDOUT will
            be directed to. Only needed when using options 2, 4, 6, or 7.
@@ -30,7 +31,7 @@ class Tee(object):
        *options, default 1:
            (0) Silence the STDOUT
            (1) Default, print to screen(shell) normally
-           (2) Print STDOUT to file, must define a *name, mode optional
+           (2) Print STDOUT to file, must define a *name; mode optional
            (3) Print STDOUT to string
            (4) Print STDOUT to file and the screen
            (5) Print STDOUT to string and the screen
