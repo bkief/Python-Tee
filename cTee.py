@@ -1,7 +1,7 @@
 import cStringIO
 import sys
 
-### This version of Tee used the StringIO implimentation in C
+### This version of Tee uses the StringIO implimentation in C
 
 newlog = True
 class Tee(object):
