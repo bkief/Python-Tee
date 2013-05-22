@@ -36,4 +36,9 @@ Tee.startlog(*name, *mode, *option)
   (5) Print STDOUT to string and the screen
   (6) Print STDOUT to file, string, and the screen
   (7) Print STDOUT to a file and a string
+  
+*Redirect Source, default 0:
+  (0) Redirect STDOUT only
+  (1) Redirect STDOUT and STDERR
+  (2) Redirect STDERR only 
 
