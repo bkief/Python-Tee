@@ -18,8 +18,8 @@ class Tee(object):
        program will append STDOUT/STDERR to that file. 
 
 
-       Tee(*name, *mode, *option)
-       Tee.startlog(*name, *mode, *option)
+       Tee(*name, *mode, *option, *RedirectSource)
+       Tee.startlog(*name, *mode, *option, *RedirectSource)
 
        *name, default=None; This is the output file the STDOUT/STDERR will
            be directed to. Only needed when using options 2, 4, 6, or 7.
